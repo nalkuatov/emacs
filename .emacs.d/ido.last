@@ -1,0 +1,59 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/blueberryninja/Desktop/kodama/haskell/conduit-sample/" . "src/")
+ ("/home/blueberryninja/Desktop/kodama/haskell/" . "conduit-sample/")
+ ("/home/blueberryninja/Desktop/kodama/" . "haskell/")
+ ("/home/" . "blueberryninja/")
+ ("/home/blueberryninja/Desktop/.almatydc/" . "covid-project/")
+ ("/home/blueberryninja/Desktop/" . "kodama/")
+ ("/home/blueberryninja/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "Desktop/kodama/"
+ "/home/blueberryninja/"
+ "/home/blueberryninja/Desktop/kodama/haskell/conduit-sample/src/"
+ "/home/blueberryninja/Desktop/kodama/haskell/conduit-sample/"
+ "/home/blueberryninja/Desktop/.almatydc/covid-project/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "Lib.hs"
+ "ChangeLog.md"
+ "Dockerfile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("Desktop/kodama/" (24203 2294 382353 638000) "scala-codeforces/" "library/" "ktordemo2/" "elixir/" "samples/" "../" "joyland/" "java-interviews/" "nurbus/" "joyland-project.zip" "./" "haskell/" "joyland-front/" "crm/" "purs/" "codekata/" "typescript/" "opensource/" "kotlin-codeforces/")
+
+ ("/home/blueberryninja/Desktop/kodama/haskell/conduit-sample/src/" (24210 62967 107982 903000) "Lib.hs" "../" "#Lib.hs#" "./")
+
+ ("/home/blueberryninja/" (24211 2254 954308 822000) ".com.kodedu.boot.AppStarter/" ".gksu.lock" "IdeaProjects/" ".nv/" ".sqlite_history" ".oracle/" ".nix-channels" ".ncmpcpp/" "out-1.ogv" "Games/" "Music/" ".ocm/" "User/" ".conda/" ".openshot_qt/" ".IntelliJIdea2016.3/" ".AsciidocFX-1.6.6/" "gitkraken/" ".python_history" "storage.json" ".gtk-recordmydesktop" "SIS2-1.ogv" ".vim/" "Podcasts/" ".lesshst" "IU-163.7743.44_blueberryninja_06.12.2016_20.44.49.zip" "IU-163.7743.44_blueberryninja_12.06.2017_18.06.15.zip" ".nvm/" ".vaadin/" ".packettracer" ".emacs.d/" ".pulse-cookie" "deprecated-list.html" "Videos/" "data/" "index.html.2" ".recently-used" ".netrc" "constant-values.html" ".fehbg" ".adobe/" ".rpmdb/" ".vuerc" ".nix-defexpr/" ".dbus/" ".IntelliJIdea2018.1/" "nodesource_setup.sh" ".gphoto/" ".vimrc" ".PyCharm2016.3/" ".cabal/" ".gradle/" ".scenebuilder/" ".pki/" ".condarc" "Backups/" ".dmrc" "Untitled 1.docx" "Test.html" "Cookies" "PycharmProjects/" "task.docx" ".docker/" ".android/" ".ivy2/" ".nvidia-settings-rc" "SIS2.ogv" ".sudo_as_admin_successful" ".gitconfig" ".stack/" ".kotlinc_history" ".IntelliJIdea2017.1/" "favicon.ico" "vpnbook/" "VirtualBox VMs/" "panel-autohide.sh" ".m2/" ".mozilla/" ".QtWebEngineProcess/" ".CLion2017.3/" ".AndroidStudio2.3/" "Audiobooks/" ".steam/" "Desktop/" ".gnome2_private/" ".icons/" "index.html.1" ".bashrc" ".lyrics/" ".Xauthority" "allclasses-frame.html" ".pam_environment" ".mongorc.js" "exercism/" ".node-gyp/" ".arduino15/" ".ghc/" ".wine/" ".zazu/" ".mysql_history" ".ssh/" "core" ".thumbnails/" ".nano/" "Android/" "package-tree.html" ".anaconda/" "GPUCache/" ".Toolbox/" "PlayOnLinux's virtual drives/" "apache-tomcat-9.0.2.tar.gz" "Local Storage/" ".zshrc" "WebstormProjects/" "Test.java" "index-all.html" "stylesheet.css" ".bash_profile" "CachedData/" ".steampath" ".bash_aliases" "Public/" ".nix-profile/" "index.html" "CLionProjects/" ".zazurc.json" ".DataGrip2017.3/" ".ngrok2/" ".cache/" "Test.class" ".dotnet/" ".java/" ".wcm/" "thumbnail/" ".yarn/" ".sdkman/" "Templates/" ".sbt/" ".wget-hsts" ".config/" ".putty/" ".razorsql/" ".themes/" "npm-debug.log" ".mysql/" "G#\273\346n\252\215_\262ߌ\344" ".oracle_jre_usage/" ".bashrc-anaconda3.bak" ".PlayOnLinux/" ".gnupg/" "package-summary.html" ".dbshell" "Cache/" ".jssc/" "q" "samsung.txt" ".gnome2/" "Pictures/" ".cert/" ".pylint.d/" ".ICEauthority" "oradiag_blueberryninja/" ".WebStorm2016.3/" "bin/" ".emacs_saves/" "Pro.html" "package-frame.html" ".tool-versions" "steam/" "Audio/" ".steampid" ".hpack/" ".local/" ".babel.json" ".emacs~" "overview-tree.html" ".mono/" ".vaadin.designer.developer.license" ".kscript/" "package-list" ".emacs" "script.js" ".vscode/" ".remmina/" ".yarnrc" ".profile" ".linuxmint/" "erlang-solutions_1.0_all.deb" "out.ogv" "info in docx.docx" ".asdf/" ".npm/" ".rs/" "pt/" "allclasses-noframe.html" ".scala_history" ".PyCharm2017.2/" ".gconf/" ".bash_history" ".gitkraken/" ".ipython/" ".bash_logout" ".xsession-errors" "anaconda3/" ".gnome/" ".psql_history" ".nuget/" ".thunderbird/" ".angular-config.json" "help-doc.html" "Cookies-journal" "Arduino/" ".xinputrc" ".gimp-2.8/" "Documents/" ".var/" "Downloads/" ".viminfo" "MonoDevelopProjects/" ".cinnamon/" ".install4j" "../" "./")
+
+ ("/home/blueberryninja/.emacs.d/" (24210 63078 133372 566000) "../" "auto-save-list/" "./" "elpa/" "evil/" "ido.last" "smex-items" "init.el")
+
+ ("/home/blueberryninja/Desktop/kodama/haskell/conduit-sample/" (24203 15143 399817 459000) "ChangeLog.md" "input.txt" "stack.yaml.lock" "../" "stack.yaml" "test/" "Setup.hs" ".gitignore" "./" "app/" "README.md" "src/" "package.yaml" "output.txt" "LICENSE" ".stack-work/" "conduit-sample.cabal")
+
+ ("/home/blueberryninja/Desktop/kodama/haskell/" (24203 14397 986955 243000) "ice-age-squirrel/" "../" "./" "scripts/" "idea-haskell/" "helloworld/" "Tetris/" "conduit-sample/" "github/" "scotty-sample/")
+
+ ("/home/blueberryninja/Desktop/kodama/" (24203 2294 382353 638000) "scala-codeforces/" "library/" "ktordemo2/" "elixir/" "samples/" "../" "joyland/" "java-interviews/" "nurbus/" "joyland-project.zip" "./" "haskell/" "joyland-front/" "crm/" "purs/" "codekata/" "typescript/" "opensource/" "kotlin-codeforces/")
+
+ ("/home/" (24205 35368 3070 417000) "blueberryninja/" "covid/" "../" "covid-project/" "./" "road-police/")
+
+ ("/home/blueberryninja/Desktop/.almatydc/covid-project/" (24204 55465 511737 84000) "covid-persistence/" "stack.yaml.lock" "../" "stack.yaml" "Dockerfile" ".gitignore" "./" "docker-compose.yml" "covid-api/" "README.md" ".git/" "covid-project.cabal" "Main.hs" "LICENSE" ".stack-work/" "covid-web-ui/" "Makefile")
+
+ ("/home/blueberryninja/Desktop/.almatydc/" (24206 17681 363702 921000) "road-police-ui/" "../" "covid-project/" "transfer-to-mongo/" "crown-web-ui/" "covidanaliticsforakim/" "akimqueue/" "./" "road-police/" "js-scripts/")
+
+ ("/home/blueberryninja/Desktop/21/" (24182 9529 0 0) "GN.Miracta.Efendimizin.Gozleri.Kaymadi.mp3" "../" "./" "1 read me.docx" "GN.Mirac.ve.Namaz-1.mp3" "Miraç Kandili.pdf")
+
+ ("/home/blueberryninja/Desktop/" (24207 5664 948015 797000) "idea-IU-193.6911.18/" "tcpproxy/" "NCALayer/" "kodama/" ".mvn/" "liteclient-build/" "pki_keys/" "lite-client/" "Reactor 3 Reference Guide Full.pdf" "MachineLearning/" "Reactor 3 Reference Guide.pdf" "idea-IU-192.5728.98/" "quiz4.docx" "../" "test2.xlsx" "AsciidocFX/" "dump.sql" "pacman/" "nvim-linux64/" "books-spring/" ".islm/" ".CloudNine/" "ncalayer.desktop" "things-to-learn.txt" "8-puzzle/" "PreviousDistro/" "agreement.docx" "side-effects/" ".gitignore" "Postman/" "webstorm-idea.desktop" "Оплата заказа.pdf" "./" ".kotlin-tests/" "kafka-2.0.0-src/" "aviation-system/" ".scala-projects/" "paho.javascript-1.0.3/" "customer/" "tole/" "index.html" "WebStorm-182.4323.44/" ".idea/" "Vainglory.desktop" "korona_cra/" "test.xlsx" "PRODI-1.ogv" "pycharm-2017.2.3/" "salati-tefriciye-duasi.jpg" "comyangroup/" ".almatydc/" ".Entertainment/" "jetbrains-idea.desktop" "SeatingPlan/" "Homebank" "telegram-widget-test/" "checking_pass/" "ais/" "21/" "toleecp/" "printPages/" "tor-browser_ru/" "ncalayer.sh" "kerek-microservices/" "ngrok")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
