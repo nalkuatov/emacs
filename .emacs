@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -13,12 +12,38 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; Bootstrap 'use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+;; Get Vim keybindings
+(use-package evil
+  :ensure t)
+(evil-mode 1)
+
+;; Intero itself
+;; (use-package intero
+;;  :ensure t)
+(load-file "~/.emacs.d/elpa/intero-20200125.848/intero.el")
+(add-hook 'haskell-mode-hook 'intero-mode)
+
+(require 'haskell-mode)
+(define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
+(define-key haskell-mode-map [f12] 'intero-devel-reload)
+
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
 (tool-bar-mode 0)
+(blink-cursor-mode 0)
+(global-linum-mode t)
+(column-number-mode t)
+(setq-default indent-tabs-mode nil)
+(setq-default show-trailing-whitespace t)
+(setq evil-insert-state-cursor 'box)
 (ido-mode 1)
 (set-default-font "Tlwg Mono-11")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
