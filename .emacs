@@ -7,15 +7,23 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+;; Theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/zenburn-emacs/")
+(load-theme 'zenburn t)
 
 ;; Bootstrap 'use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+(use-package smex
+ :ensure t)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Get Vim keybindings
 (use-package evil
@@ -23,9 +31,8 @@
 (evil-mode 1)
 
 ;; Intero itself
-;; (use-package intero
-;;  :ensure t)
-(load-file "~/.emacs.d/elpa/intero-20200125.848/intero.el")
+(use-package intero
+ :ensure t)
 (add-hook 'haskell-mode-hook 'intero-mode)
 
 (require 'haskell-mode)
@@ -43,18 +50,3 @@
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
 (set-default-font "Tlwg Mono-11")
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (leuven)))
- '(package-selected-packages (quote (fireplace haskell-mode smex))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(setq backup-directory-alist '(("." . "~/.emacs_saves")))
