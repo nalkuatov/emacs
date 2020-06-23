@@ -7,6 +7,8 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
 
+(add-to-list 'package-archives
+	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; Theme
@@ -38,6 +40,31 @@
 (require 'haskell-mode)
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
 (define-key haskell-mode-map [f12] 'intero-devel-reload)
+
+;; Enable scala-mode for highlighting, indentation and motion commands
+(use-package scala-mode
+  :mode "\\.s\\(cala\\|bt\\)$")
+
+;; Enable sbt mode for executing sbt commands
+(use-package sbt-mode
+  :commands sbt-start sbt-command
+  :config
+  ;; WORKAROUND: https://github.com/ensime/emacs-sbt-mode/issues/31
+  ;; allows using SPACE when in the minibuffer
+  (substitute-key-definition
+   'minibuffer-complete-word
+   'self-insert-command
+   minibuffer-local-completion-map)
+   ;; sbt-supershell kills sbt-mode:  https://github.com/hvesalai/emacs-sbt-mode/issues/152
+   (setq sbt:program-options '("-Dsbt.supershell=false"))
+)
+
+(use-package eglot
+  :pin melpa-stable
+  :config
+  (add-to-list 'eglot-server-programs '(scala-mode . ("metals-emacs")))
+  ;; (optional) Automatically start metals for Scala files.
+  :hook (scala-mode . eglot-ensure))
 
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
