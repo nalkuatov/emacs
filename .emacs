@@ -49,8 +49,8 @@
     (psc-ide-mode)
     (company-mode)
     (flycheck-mode)
-    (turn-on-purescript-indentation)
-    (turn-on-purescript-unicode-input-method)))
+    (turn-on-purescript-unicode-input-method)
+    (haskell-indentation-mode)))
 ;; use the psc-ide server that is relative to your npm bin directory, e.g. ./node_modules/.bin/purs
 (setq psc-ide-use-npm-bin t)
 ;; disable weird indentation
