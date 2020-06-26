@@ -41,6 +41,21 @@
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
 (define-key haskell-mode-map [f12] 'intero-devel-reload)
 
+;; purescript
+(use-package psc-ide
+  :ensure t)
+(add-hook 'purescript-mode-hook
+  (lambda ()
+    (psc-ide-mode)
+    (company-mode)
+    (flycheck-mode)
+    (turn-on-purescript-indentation)
+    (turn-on-purescript-unicode-input-method)))
+;; use the psc-ide server that is relative to your npm bin directory, e.g. ./node_modules/.bin/purs
+(setq psc-ide-use-npm-bin t)
+;; disable weird indentation
+(purescript-indentation-mode nil)
+
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
   :mode "\\.s\\(cala\\|bt\\)$")
