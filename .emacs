@@ -35,7 +35,10 @@
 ;; Intero itself
 (use-package intero
  :ensure t)
-(add-hook 'haskell-mode-hook 'intero-mode)
+(add-hook 'haskell-mode-hook
+  (lambda ()
+    (intero-mode)
+    (turn-on-haskell-unicode-input-method)))
 
 (require 'haskell-mode)
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
