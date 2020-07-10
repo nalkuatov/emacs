@@ -45,6 +45,8 @@
 (define-key haskell-mode-map [f12] 'intero-devel-reload)
 
 ;; purescript
+(use-package purescript-mode :ensure t)
+
 (use-package psc-ide
   :ensure t)
 (add-hook 'purescript-mode-hook
