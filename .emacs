@@ -58,8 +58,6 @@
     (haskell-indentation-mode)))
 ;; use the psc-ide server that is relative to your npm bin directory, e.g. ./node_modules/.bin/purs
 (setq psc-ide-use-npm-bin t)
-;; disable weird indentation
-(purescript-indentation-mode nil)
 
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
