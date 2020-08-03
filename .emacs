@@ -84,6 +84,22 @@
   ;; (optional) Automatically start metals for Scala files.
   :hook (scala-mode . eglot-ensure))
 
+(use-package sr-speedbar
+               :ensure t
+                 :bind ("C-k" . sr-speedbar-toggle)
+                   :init
+                     (setq sr-speedbar-auto-refresh nil)
+                       (setq speedbar-show-unknown-files t)
+                       (setq speedbar-use-images nil))
+
+(setq require-final-newline t)
+
+;; store all backup and autosave files in the tmp dir
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
