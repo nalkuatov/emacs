@@ -99,6 +99,7 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+(auto-save-visited-mode t)
 
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
