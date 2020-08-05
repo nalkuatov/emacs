@@ -94,6 +94,10 @@
 
 (setq require-final-newline t)
 
+;; easily switch between windows
+(use-package ace-window :ensure t)
+(global-set-key (kbd "M-o") 'ace-window)
+
 ;; store all backup and autosave files in the tmp dir
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
