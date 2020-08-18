@@ -130,4 +130,4 @@
 (setq-default show-trailing-whitespace t)
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
-(set-default-font "Tlwg Mono-11")
+(set-default-font "Source Code Pro-11")
