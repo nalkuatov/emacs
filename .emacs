@@ -37,8 +37,7 @@
  :ensure t)
 (add-hook 'haskell-mode-hook
   (lambda ()
-    (intero-mode)
-    (turn-on-haskell-unicode-input-method)))
+    (intero-mode)))
 
 (require 'haskell-mode)
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
@@ -119,6 +118,10 @@
   (save-some-buffers t))
 
 (add-hook 'focus-out-hook 'save-all)
+
+(use-package hasklig-mode
+  :commands (hasklig-mode)
+  :delight "hl")
 
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
