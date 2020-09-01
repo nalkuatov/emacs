@@ -120,6 +120,8 @@
 (add-hook 'focus-out-hook 'save-all)
 
 (use-package hasklig-mode
+  :ensure t
+  :hook (haskell-mode)
   :commands (hasklig-mode)
   :delight "hl")
 
