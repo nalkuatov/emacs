@@ -33,11 +33,34 @@
 (evil-mode 1)
 
 ;; Intero itself
-(use-package intero
- :ensure t)
-(add-hook 'haskell-mode-hook
-  (lambda ()
-    (intero-mode)))
+;; (use-package intero
+;; :ensure t)
+;; (add-hook 'haskell-mode-hook
+;; (lambda ()
+;;    (intero-mode)))
+
+;; Trying to use ghcide instead of intero
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode t))
+(use-package yasnippet
+  :ensure t)
+(use-package lsp-mode
+  :ensure t
+  :hook (haskell-mode . lsp)
+  :commands lsp)
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
+(use-package lsp-haskell
+ :ensure t
+ :config
+ (setq lsp-haskell-process-path-hie "ghcide")
+ (setq lsp-haskell-process-args-hie '())
+ ;; Comment/uncomment this line to see interactions between lsp client/server.
+ ;;(setq lsp-log-io t)
+)
 
 (require 'haskell-mode)
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
@@ -135,4 +158,4 @@
 (setq-default show-trailing-whitespace t)
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
-(set-default-font "Source Code Pro-11")
+(set-default-font "Hasklig-11")
