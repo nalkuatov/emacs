@@ -148,6 +148,9 @@
   :commands (hasklig-mode)
   :delight "hl")
 
+(custom-set-variables
+   '(haskell-stylish-on-save t))
+
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
