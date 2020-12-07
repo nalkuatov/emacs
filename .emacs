@@ -65,6 +65,7 @@
 (require 'haskell-mode)
 (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
 (define-key haskell-mode-map [f12] 'intero-devel-reload)
+(global-set-key (kbd "C-0") 'haskell-mode-stylish-buffer)
 
 ;; purescript
 (use-package purescript-mode :ensure t)
@@ -147,9 +148,6 @@
   :hook (haskell-mode)
   :commands (hasklig-mode)
   :delight "hl")
-
-(custom-set-variables
-   '(haskell-stylish-on-save t))
 
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
