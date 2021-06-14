@@ -112,6 +112,7 @@
                  :bind ("C-k" . sr-speedbar-toggle)
                    :init
                      (setq sr-speedbar-auto-refresh nil)
+                       (setq sr-speedbar-right-side nil)
                        (setq speedbar-show-unknown-files t)
                        (setq speedbar-use-images nil))
 
