@@ -32,6 +32,9 @@
   :ensure t)
 (evil-mode 1)
 
+(use-package haskell-mode
+  :ensure t)
+
 ;; Intero itself
 ;; (use-package intero
 ;; :ensure t)
@@ -62,10 +65,10 @@
  ;;(setq lsp-log-io t)
 ;;)
 
-(require 'haskell-mode)
-(define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
-(define-key haskell-mode-map [f12] 'intero-devel-reload)
-(global-set-key (kbd "C-0") 'haskell-mode-stylish-buffer)
+;; (require 'haskell-mode)
+;; (define-key haskell-mode-map [f5] (lambda () (interactive) (compile "stack build --fast")))
+;; (define-key haskell-mode-map [f12] 'intero-devel-reload)
+;; (global-set-key (kbd "C-0") 'haskell-mode-stylish-buffer)
 
 ;; purescript
 (use-package purescript-mode :ensure t)
@@ -144,11 +147,11 @@
 
 (add-hook 'focus-out-hook 'save-all)
 
-(use-package hasklig-mode
-  :ensure t
-  :hook (haskell-mode)
-  :commands (hasklig-mode)
-  :delight "hl")
+;; (use-package hasklig-mode
+;; :ensure t
+;; :hook (haskell-mode)
+;; :commands (hasklig-mode)
+;; :delight "hl")
 
 (add-hook 'java-mode-hook (lambda ()
                             (setq c-basic-offset 2
@@ -165,4 +168,4 @@
 (setq-default show-trailing-whitespace t)
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
-(set-default-font "Hasklig-11")
+(set-frame-font "TlwgMono-11")
