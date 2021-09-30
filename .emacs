@@ -87,6 +87,7 @@
 
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
+  :ensure t
   :mode "\\.s\\(cala\\|bt\\)$")
 
 ;; Enable sbt mode for executing sbt commands
@@ -169,3 +170,8 @@
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
 (set-frame-font "TlwgMono-11")
+(set-face-attribute
+  'default nil
+  :weight 'regular
+  :height 115
+  :width 'semi-condensed)
