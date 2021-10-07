@@ -12,8 +12,12 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; Theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/zenburn-emacs/")
-(load-theme 'zenburn t)
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/zenburn-emacs/")
+;; (load-theme 'zenburn t)
+
+(use-package solarized-theme
+  :ensure t)
+(load-theme 'solarized-light t)
 
 ;; Bootstrap 'use-package'
 (unless (package-installed-p 'use-package)
@@ -169,9 +173,4 @@
 (setq-default show-trailing-whitespace t)
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
-(set-frame-font "TlwgMono-11")
-(set-face-attribute
-  'default nil
-  :weight 'regular
-  :height 115
-  :width 'semi-condensed)
+(set-frame-font "TlwgMono-14")
