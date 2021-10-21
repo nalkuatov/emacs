@@ -15,14 +15,14 @@
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/zenburn-emacs/")
 ;; (load-theme 'zenburn t)
 
-(use-package solarized-theme
-  :ensure t)
-(load-theme 'solarized-light t)
-
 ;; Bootstrap 'use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+(use-package solarized-theme
+  :ensure t)
+(load-theme 'solarized-light t)
 
 (use-package smex
  :ensure t)
