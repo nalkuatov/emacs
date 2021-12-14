@@ -18,6 +18,10 @@
 
 (use-package solarized-theme
   :ensure t)
+;; Don't change the font for some headings and titles
+(setq solarized-use-variable-pitch nil)
+;; Change the size of markdown-mode headlines (off by default)
+(setq solarized-scale-markdown-headlines t)
 (load-theme 'solarized-light t)
 
 (use-package smex
