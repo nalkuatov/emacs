@@ -174,3 +174,6 @@
 (setq evil-insert-state-cursor 'box)
 (ido-mode 1)
 (set-frame-font "TlwgMono-14")
+
+;; make the scroll smooth
+(setq mouse-wheel-progressive-speed nil)
