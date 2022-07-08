@@ -22,6 +22,14 @@
 (setq solarized-use-variable-pitch nil)
 ;; Change the size of markdown-mode headlines (off by default)
 (setq solarized-scale-markdown-headlines t)
+;; Avoid all font-size changes
+(setq solarized-height-minus-1 1.0)
+(setq solarized-height-plus-1 1.0)
+(setq solarized-height-plus-2 1.0)
+(setq solarized-height-plus-3 1.0)
+(setq solarized-height-plus-4 1.0)
+;; Use less bolding
+(setq solarized-use-less-bold t)
 (load-theme 'solarized-light t)
 
 (use-package smex
